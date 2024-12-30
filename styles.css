@@ -1,13 +1,14 @@
-/* Geral */
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff8c42, #ff6b35);
+    background: linear-gradient(135deg, #db0000, #000000);
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     height: 100vh;
     cursor: url('images/camera-drone.png'), auto;
   }
@@ -46,12 +47,11 @@ body {
     line-height: 1.5;
     margin-bottom: 30px;
   }
-  
-  /* Botões */
+
   .buttons {
-    display: flex; /* Alinha os botões em linha */
+    display: flex; 
     justify-content: center;
-    gap: 20px; /* Espaço entre os botões */
+    gap: 20px; 
   }
   
   button {
@@ -75,10 +75,28 @@ body {
   #no-btn {
     background: #ff3305;
     color: white;
-    position: relative; /* Ajusta para manter o comportamento */
+    position: relative; 
   }
   
   #no-btn:hover {
     background: #e35d30;
   }
   
+  /* Estilo das trilhas */
+.trail {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  pointer-events: none; /* Impede interação com as trilhas */
+  animation: fadeOut 1s forwards; /* Adiciona efeito de desaparecimento */
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
