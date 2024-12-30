@@ -50,3 +50,23 @@ loop();
 const audio = document.getElementById("background-music");
 audio.volume = 0.5;
 audio.play();
+
+
+// Cria uma trilha de mouse
+document.addEventListener("mousemove", (e) => {
+    // Cria um elemento de trilha
+    const trail = document.createElement("div");
+    trail.classList.add("trail");
+  
+    // Posiciona a trilha com base na posição do mouse
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+  
+    // Adiciona a trilha ao corpo da página
+    document.body.appendChild(trail);
+  
+    // Remove a trilha após 1 segundo
+    setTimeout(() => {
+      trail.remove();
+    }, 1000);
+  });

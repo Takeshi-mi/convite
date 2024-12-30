@@ -32,6 +32,7 @@ noButton.addEventListener("mouseover", desviaBotao);
 noButton.addEventListener("click", desviaBotao);
 noButton.addEventListener("touchstart", desviaBotao);
 
+// Cria uma trilha de mouse
 document.addEventListener("mousemove", (e) => {
     // Cria um elemento de trilha
     const trail = document.createElement("div");

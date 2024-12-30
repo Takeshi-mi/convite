@@ -10,6 +10,8 @@ body {
     height: 100vh;
     overflow: hidden;
     text-align: center;
+    cursor: url('camera-drone.png'), auto;
+
   }
   
   .container {
@@ -42,4 +44,22 @@ body {
     margin-top: 20px;
     border-radius: 10px; /* Bordas arredondadas para um visual mais agradável */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra leve */
+  }
+   /* Estilo das trilhas */
+.trail {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(26, 18, 246);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    pointer-events: none; /* Impede interação com as trilhas */
+    animation: fadeOut 1s forwards; /* Adiciona efeito de desaparecimento */
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: scale(0.5);
+    }
   }
