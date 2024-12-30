@@ -1,0 +1,84 @@
+/* Geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff8c42, #ff6b35);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: url('images/camera-drone.png'), auto;
+  }
+  
+  /* Contêiner principal */
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Imagem e título */
+  .profile {
+    margin-bottom: 20px;
+  }
+  
+  .professor-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #fff7e6;
+  }
+  
+  /* Parágrafo */
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  /* Botões */
+  .buttons {
+    display: flex; /* Alinha os botões em linha */
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  #yes-btn {
+    background: #0d9716;
+    color: white;
+  }
+  
+  #yes-btn:hover {
+    background: #53b300;
+  }
+  
+  #no-btn {
+    background: #ff3305;
+    color: white;
+    position: relative; /* Ajusta para manter o comportamento */
+  }
+  
+  #no-btn:hover {
+    background: #e35d30;
+  }
+  
