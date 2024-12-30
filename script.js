@@ -3,7 +3,7 @@ const yesButton = document.getElementById("yes-btn");
 
 // Redireciona para uma página de comemoração
 yesButton.addEventListener("click", () => {
-  window.location.href = "https://www.youtube.com/watch?v=-0hmmX96QvY&ab_channel=michelbing"; 
+  window.location.href = "comemoração/comemoração.html"; 
 });
 
 // Faz o botão "Não" fugir ao passar o mouse ou clique
